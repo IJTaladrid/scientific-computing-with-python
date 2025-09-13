@@ -48,21 +48,6 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
 
     return successful_outcomes / num_experiments
 
-hat = Hat(blue=5, red=4, green=2)
-
-# Define the expected balls and experiment parameters
-expected = {'red': 1, 'green': 2}
-num_balls = 4
-num_exp = 100000
-
-# Calculate the probability
-probability = experiment(
-    hat=hat,
-    expected_balls=expected,
-    num_balls_drawn=num_balls,
-    num_experiments=num_exp
-)
-
 hat = Hat(black=6, red=4, green=3)
 
 # Define the expected balls and experiment parameters
